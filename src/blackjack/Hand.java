@@ -103,6 +103,9 @@ public class Hand {
 	}
 	
 	public boolean getBust() {
+		if (isBust()) {
+			this.bust = true;
+		}
 		return this.bust;
 	}
 	
