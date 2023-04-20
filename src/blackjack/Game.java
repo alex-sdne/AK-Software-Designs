@@ -150,7 +150,7 @@ public class Game {
 			System.out.println(x.getPlayerName() + "'s hand sum: " + x.getPlayerCount());
 		}
 		// if all players are bust
-		if ((bustCount) == players.size()) {
+		if ((bustCount) == (players.size() - 1)) {
 			winner = "All players have gone bust, dealer wins.";
 			return winner;
 		}

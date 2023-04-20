@@ -102,6 +102,7 @@ public class Player {
 		this.bust = false;
 		this.blackjack = false;
 		this.hasWon = false;
+		this.hand.setBust(false);
 	}
 	
 	@Override
