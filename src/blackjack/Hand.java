@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class Hand {
 
 	private int size;
+	private boolean bust;
 	private ArrayList<PlayingCard> cards;
 	
 	public Hand() {
@@ -95,6 +96,14 @@ public class Hand {
 	// clears all cards from the hand
 	public void clear() {
 		cards.clear();
+	}
+	
+	public void setBust(boolean bust) {
+		this.bust = bust;
+	}
+	
+	public boolean getBust() {
+		return this.bust;
 	}
 	
 	@Override

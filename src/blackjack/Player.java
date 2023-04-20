@@ -66,10 +66,11 @@ public class Player {
 	// sets if the player is bust
 	public void setBust(boolean bust) {
 		this.bust = bust;
+		this.hand.setBust(bust);
 	}
 	// returns the bust status of the player
 	public boolean getBust() {
-		return this.hand.isBust();
+		return this.hand.getBust();
 	}
 	// returns the sum of the player's cards
 	public int getCount() {
